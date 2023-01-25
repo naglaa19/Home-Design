@@ -28,26 +28,26 @@
                         @error('image')
                         <div class="text-danger">{{$message}}</div>
                         @enderror
-                        <input type="hidden"name="old_image" class="form-control" value="{{ $image->image }}"></div>
+                        <input type="hidden"name="old_image" class="form-control" value="{{ $image->image }}">
                     </div>
 
 
                     {{-- Diecreption --}}
                     <div class="form-floating">
-                        <textarea class="form-control" id="floatingTextarea2" style="height: 150px"  name="discreption" value="{{$image->discreption}}"></textarea>
+                        <textarea class="form-control" id="floatingTextarea2" style="height: 150px"  name="discreption" >{{$image->discreption}}</textarea>
                         <label for="floatingTextarea2">Discreption</label>
                     </div>
 
                     {{-- category --}}
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Category</label>
-                        <select name="cat_id"  id=""class="form-control">
+                        <select name="category_id"  id=""class="form-control">
                             <option value="{{$image->category_id}}">{{ $category->name}}</option>
                         @foreach ($cat as $category)
                         <option value="{{ $category->id}}">{{ $category->name }}</option>
                         @endforeach
                         </select>
-                        @error('cat_id')
+                        @error('category_id')
                         <div class="text-danger">{{$message}}</div>
                         @enderror
                     </div>
