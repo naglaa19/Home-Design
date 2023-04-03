@@ -1,0 +1,163 @@
+
+body{
+  background-color: #181818;
+}
+.container
+{
+    justify-content: center;
+    position: relative;  
+    border-radius: 10px;
+    width: 1400px;    
+}
+.container2{
+  background-color: #0f0f0f;
+  z-index: -2;
+}
+.user_pic{
+  width:150px;
+}
+
+.center
+{
+    margin-left: 100px;
+}
+.card
+{  
+  border-radius: 10px;
+  display: inline;    
+  background-color: #0f0f0f;
+  border: 0;
+}
+
+.user_pic
+{   
+    border-radius: 50%;
+    margin: 15px;
+}
+.user_name
+{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    display: inline;
+    margin: 40px;
+}
+.edit,
+.upload
+{
+    background-color: #6d6a6a;
+    border-radius: 10px;
+    font-size: 17px;
+    margin: 30px;
+    width: 150px;
+    color: white;
+}
+
+
+.details
+{
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+.details1
+{
+    border-collapse: collapse;
+    width: 600px;
+    border: #6d6a6a;
+    font-size: 18px;
+}
+.th1,
+.td1
+{
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+.tr1:nth-child(even) 
+{
+    background-color: #1a1919;
+    border-radius: 20px;
+}
+.container1
+{
+  width: 100%;
+  height: 100%;
+}
+.trans
+{
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.top
+{
+  width: 100%; 
+  height:fit-content;  
+  margin-left: 50px;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  /* justify-content: center; */
+  align-items: center;
+  display:flex;
+  flex-wrap: wrap ;
+}
+.top ul
+{
+  list-style: none;
+  width: fit-content;
+  height: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+
+.top ul li
+{
+  position: relative;
+  /* float: left; */
+  width: fit-content;
+  height: 25%;
+  overflow: hidden;
+  /* border: 1px solid #000000; */
+  
+}
+
+.top ul li::before
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  content: '';
+  color: white;
+  opacity: 0.4;
+  text-align: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.top ul li:hover::before
+{
+  opacity: 0;
+  background-color: rgba(0,0,0,0.90);
+}
+.top ul li img
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  
+}
+.imgg{
+  max-width: 300px;
+}

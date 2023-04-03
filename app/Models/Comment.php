@@ -9,12 +9,12 @@ class Comment extends Model
 {
     use HasFactory;
     protected $table='comments';
-    protected $fillable=['comment','user_id','design_id','created_at','updated_at'];
-    protected $hidden=['created_at','updated_at'];
+    protected $fillable=['comment','user_id','design_id'];
+    // protected $hidden=['created_at','updated_at'];
 
     public function User()
     {
-        return $this->belongsTo(User::class ,'user_id');
+        return $this->belongsTo(User::class ,'user_id' , 'id');
     }
 
     public function Design()

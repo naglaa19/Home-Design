@@ -1,0 +1,43 @@
+*
+{
+    -webk-it-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #181818 !important;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+.image {
+	display: inline-block;
+	text-align:center;
+	width: 350px;
+    margin-left: 18px;
+}
+
+.figure {
+	overflow: hidden;
+	margin: 20px;
+}
+.image img {
+    position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+    z-index: -55;
+}
+.image #zoom-In .figure img {
+	transform: scale(1);
+	transition: 0.8s ease-in-out;
+}
+.image #zoom-In .figure:hover img {
+	transform: scale(1.5);
+}
+

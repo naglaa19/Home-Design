@@ -16,8 +16,7 @@ class CreateDesignsTable extends Migration
         Schema::create('designs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('photo');
-            $table->string('discreption');
+            $table->string('image');
             $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
 
