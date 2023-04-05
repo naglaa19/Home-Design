@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<head> 
+    <title>Sections</title>
+ </head>
 {{-- message --}}
 <div class="container">
     

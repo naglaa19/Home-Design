@@ -7,14 +7,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="{{asset('css/category.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/lightbox.css')}}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>Home</title>
+        <title>{{$category->name}}</title>
     </head>
-    <body style="background-color:#181818;;">
+    <body>
 
-
+      <div class="back-img">
+        <img src="{{asset('images/images/black3.jpeg')}}">
+        <div class="back-text">
+          <h1>{{$category->name}}</h1>
+          <p>We Have All Ideas for You</p>
+        </div>
+      </div>
         
     <!--Start page content-->
     <div class="contanier">

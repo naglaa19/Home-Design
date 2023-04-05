@@ -7,14 +7,10 @@
 <div class="row justify-content-center">
     <div class="col-md-8">
         <table class="table">
-            @if(session()->has('success'))
-                <div class="alert alert-success">
-                    {{ session()->get('success') }}
-                </div>
-             @endif
             <thead class="table-dark">
             <tr>
-                <th scope="col">Name</th>
+                <th scope="col">User</th>
+                <th scope="col">Comment</th>
                 <th scope="col">Design</th>
                 <th scope="col">Control</th>
             </tr>

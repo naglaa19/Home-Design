@@ -2,6 +2,9 @@
 @extends('layouts.app')
 
 @section('content')
+<head> 
+    <title>Edit Image</title>
+ </head>
 <div class="container">
 
     <div class="row justify-content-center">

@@ -88,7 +88,7 @@
             <a href="#">Services</a>
             <ul class="submenu">
                 @foreach (App\Http\Controllers\GlobalVariableController::global() as $category)
-                    <li><a href="{{route('/main', $category->id)}}">{{$category->name}}</a></li>
+                    <li><a href="{{route('/images', $category->id)}}">{{$category->name}}</a></li>
                 @endforeach
             </ul>         
           </li>
@@ -99,40 +99,11 @@
         </ul>
     </nav>
        @endif
-        <main class="py-4">
+        <main >
             @yield('content')
         </main>
 
-        {{-- Footer  --}}
-        {{-- <footer class="footer">
-            <div class="footer-background">
-              <div class="footer-logo">
-                <img style="width: 150px"  src="{{ asset('images/logo/home.png')}}">
-              </div>
-              <div class="footer-social-icons">
-                <img class="social-icon" src="{{asset('images/icons/icon-facebook.svg')}}">
-                <img class="social-icon" src="{{asset('images/icons/icon-youtube.svg')}}">
-                <img class="social-icon" src="{{asset('images/icons/icon-twitter.svg')}}">
-                <img class="social-icon" src="{{asset('images/icons/icon-pinterest.svg')}}">
-                <img class="social-icon" src="{{asset('images/icons/icon-instagram.svg')}}">
-              </div>
-              <ul class="footer-list left-list">
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>Blog</li>
-              </ul>
-              
-              <ul class="footer-list right-list">
-                <li>Careers</li>
-                <li>Support</li>
-                <li>Privacy Policy</li>
-              </ul>  
-              {{-- <button class="button-request footer-btn">Request Invite</button> --}}
-            
-              {{-- <p class="copy-right">© LaCasa. All Rights Reserved </p>
-            
-            </div>
-        </footer>  --}}
+        @if (Auth::user())
         <footer class="footer-distributed">
 
             <div class="footer-left">
@@ -192,6 +163,7 @@
             </div>
       
           </footer>
+          @endif
     </div>
 </body>
 </html>

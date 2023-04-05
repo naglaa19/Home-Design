@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<head> 
+  <title>Home</title>
+</head>
 <div class="container">
     <div>
         <canvas id="myChart"></canvas>

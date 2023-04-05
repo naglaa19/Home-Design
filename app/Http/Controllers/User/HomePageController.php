@@ -22,7 +22,7 @@ class HomePageController extends Controller
   
     public function show($id)
     {
-        $category = Category::select()->get();
+        $category = Category::select()->find($id);
         $image = Image::select()->where('category_id',$id)->get();
         return view('user.category',compact('image','category'));
     }
