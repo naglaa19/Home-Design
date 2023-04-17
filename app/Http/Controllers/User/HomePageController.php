@@ -11,6 +11,9 @@ use Illuminate\Http\Request;
 
 class HomePageController extends Controller
 {
+    public function home(){
+        return view("user.home");
+    }
     public function index()
     {
         $category = Category::select()->get();

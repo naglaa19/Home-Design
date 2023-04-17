@@ -117,7 +117,7 @@ Route::group(['middleware' => 'auth'],function(){
     Route::post('contact-us', [App\Http\Controllers\User\ContactFormController::class, 'store'])->name('contact/store');
 
     //images
-    Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'index'])->name('/main');
+    Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'home'])->name('/main');
     Route::get('/images/{id}', [App\Http\Controllers\User\HomePageController::class, 'show'])->name('/images');
 
     //Design
