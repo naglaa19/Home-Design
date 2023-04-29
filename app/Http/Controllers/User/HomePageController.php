@@ -19,6 +19,19 @@ class HomePageController extends Controller
         return view("user.ar");
     }
 
+    public function drag_drop(){
+        return view("user.drag_drop");
+    }
+
+    public function inspiration(){
+        return view("user.inspiration");
+    }
+
+    public function virtual(){
+        return view("user.virtual");
+    }
+
+
     public function index()
     {
         $category = Category::select()->get();

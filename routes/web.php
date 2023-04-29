@@ -102,6 +102,10 @@ Route::group(['middleware' => 'auth'],function(){
     //home
     Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'home'])->name('/main');
     Route::get('/AR', [App\Http\Controllers\User\HomePageController::class, 'ar'])->name('/ar');
+    Route::get('/drag&drop', [App\Http\Controllers\User\HomePageController::class, 'drag_drop'])->name('/drag');
+    Route::get('/inspiration', [App\Http\Controllers\User\HomePageController::class, 'inspiration'])->name('/inspiration');
+    Route::get('/virtual', [App\Http\Controllers\User\HomePageController::class, 'virtual_showroom'])->name('/virtual');
+
     //profile
     Route::group(['prefix' => 'Profile'],function(){
         Route::get('/{id}', [App\Http\Controllers\User\ProfileController::class, 'index'])->name('profile/index');
