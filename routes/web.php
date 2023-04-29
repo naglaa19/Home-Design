@@ -99,6 +99,9 @@ Route::group(['middleware' => 'auth:admin'],function(){
 // user routes
 
 Route::group(['middleware' => 'auth'],function(){
+    //home
+    Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'home'])->name('/main');
+    Route::get('/AR', [App\Http\Controllers\User\HomePageController::class, 'ar'])->name('/ar');
     //profile
     Route::group(['prefix' => 'Profile'],function(){
         Route::get('/{id}', [App\Http\Controllers\User\ProfileController::class, 'index'])->name('profile/index');
@@ -117,7 +120,6 @@ Route::group(['middleware' => 'auth'],function(){
     Route::post('contact-us', [App\Http\Controllers\User\ContactFormController::class, 'store'])->name('contact/store');
 
     //images
-    Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'home'])->name('/main');
     Route::get('/images/{id}', [App\Http\Controllers\User\HomePageController::class, 'show'])->name('/images');
 
     //Design

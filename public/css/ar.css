@@ -1,0 +1,156 @@
+.contain{
+    background-color: #181818;
+    height: 3078px;
+    z-index: -2;
+}
+
+.first_section,
+.second_section{
+    position: absolute;
+    width: 100%;
+}
+.first_section_img{
+    width: 100%;
+    height: 700px;
+    opacity: 0.6;
+    z-index: -5;
+    /* position: static; */
+}
+
+.first_section_header{
+    position: relative;
+    top: -550px;
+    text-align: center;
+}
+
+.first_section_header h1{
+    font-weight: bold;
+}
+.third_section_description h2,
+.second_section_header h1,
+.fourth_section_description h2,
+.fifth_section_description h2{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.second_section_header h1{
+    margin-top: 800px;
+    margin-left: 550px;
+    margin-bottom: 50px;
+    
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+.icon_hand img,
+.icon_chart img{
+    width: 180px;
+}
+.icon_hand p,
+.icon_chart p {
+    color: #d3d3d3;
+    margin-top: 40px;
+    width: 250px;
+    font-size: large;
+}
+
+.icon_hand p,
+.icon_chart p,
+.third_section_description p,
+.fourth_section_description p,
+.fifth_section_description p {
+    color: #d3d3d3;
+}
+
+.third_section{
+    position: absolute;
+    top: 1400px;
+    /* left: 100px; */
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    height: 510px;
+}
+
+.backVideo{
+    width: 700px;
+    height: 700px;
+    margin-top: -100px;
+    margin-left: 100px;
+    box-shadow: black;
+}
+
+.third_section_description h2,
+.third_section_description p{
+    position: relative;
+    top: -500px;
+    left: 900px;
+}
+
+.third_section_description p,
+.fourth_section_description p,
+.fifth_section_description p{
+    width: 400px;
+    line-height: 40px;
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.fourth_section{
+    position: absolute;
+    top: 1950px;
+}
+
+.video{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: 600px;
+    top: -550px;
+    z-index: 55;
+}
+
+
+.fourth_section_description p,
+.fourth_section_description h2{
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.fourth_section_description h2{
+    width: 500px;
+}
+
+.fourth_section_img{
+    position: relative;
+    left: 950px;
+    top: -250px;
+}
+
+.fifth_section{
+    position: absolute;
+    top: 2700px;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    height: 510px;
+}
+
+.fifth_section img{
+    position: relative;
+    width: 400px;
+    top: 70px;
+    left: 200px;
+}
+
+.fifth_section_description h2,
+.fifth_section_description p{
+    position: relative;
+    top: -250px;
+    left: 800px;
+}

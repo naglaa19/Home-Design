@@ -14,6 +14,11 @@ class HomePageController extends Controller
     public function home(){
         return view("user.home");
     }
+    
+    public function ar(){
+        return view("user.ar");
+    }
+
     public function index()
     {
         $category = Category::select()->get();

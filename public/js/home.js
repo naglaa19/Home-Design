@@ -99,4 +99,3 @@ function timer_slid(){
   timerImage[index-1].style.display = "block";
   setTimeout(timerImage,1000);
 }
-
