@@ -93,6 +93,11 @@ span
 .details_p
 {
     width: 600px;
+    height: 400px;
+    float: right;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 50px;
 }
 .ar_video
 {
