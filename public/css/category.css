@@ -10,6 +10,7 @@ body{
 }
 
 .contanier{
+  margin-top: 470px;
   width: 100%;
   min-height: 100vh;
   padding-left: 20px;
@@ -42,21 +43,29 @@ body{
   /* width: fit-content; */
 }
 
+.back-nav img{
+  opacity: 0.4;
+}
+
 .back-img{
-  position: relative;
+  /* position: absolute; */
   z-index: -55;
+
 }
 .back-img img{
+  position: absolute;
   width: 100%;
   height: 600px;
   margin-bottom: 30px;
+  z-index: -55;
 }
 
-.back-text{
-  position: absolute;
+.back-text h1,
+.back-text p{
+  position: relative;
   top: 170px;
   color: #fff;
-  left: 31%;
+  /* left: 31%; */
   font-size: 42px;
   text-align: center;
 }

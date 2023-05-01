@@ -23,16 +23,16 @@
 
 
 <div class="back-nav">
-  <img src="{{asset('images/images/black3.jpeg')}}">
+  <img style="" src="{{asset('images/images/black3.jpeg')}}">
   <div class="back-text">
     <h1>Frequently Asked Question</h1>
     <p>Ask Us</p>
   </div>
 </div>
 
-<div style="position: absolute">
+<div class="sections">
   <div class="list-group">
-      @foreach($section as $sec)
+    @foreach($section as $sec)
     <a href="{{route('FAQ/show',$sec->id)}}" class="only list-group-item list-group-item-action link" aria-current="true">{{$sec->name}}</a>
     @endforeach
   </div>

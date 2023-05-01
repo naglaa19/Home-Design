@@ -1,23 +1,27 @@
+
 .contain{
     background-color: #181818;
     height: 3078px;
-    z-index: -2;
+    /* position: relative; */
+    /* z-index: -100 !important; */
 }
 
 .first_section,
 .second_section{
     position: absolute;
     width: 100%;
+    /* z-index: -55; */
 }
-.first_section_img{
+.first_section img{
+    /* position: absolute;   */
     width: 100%;
     height: 700px;
     opacity: 0.6;
-    z-index: -5;
-    /* position: static; */
+    /* z-index: -55; */
 }
 
-.first_section_header{
+.first_section_header h1,
+.first_section_header h3{
     position: relative;
     top: -550px;
     text-align: center;

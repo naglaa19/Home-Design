@@ -12,10 +12,10 @@
     </head>
     <body>
     <div class="section1">
+        <img class="pic_cont" src="{{asset('images/drag_drop/picc5.jpg')}}">
         <div class="div1" >
             <h1> Augmented Reality Drag and Drop!</h1>
-            <p class="p1"> Augmented Reality can be considered as one of the biggest technology trends that will let the real-life environment right in front of us.</p>
-            <img class="pic_cont" src="{{asset('images/drag_drop/picc5.jpg')}}">
+            <p class="p1"> Augmented Reality can be considered as one of the biggest technology trends that will let the real-life environment right in front of us.</p>      
         </div>
     </div>
     
@@ -44,7 +44,7 @@
     </div>
     <div class="section2">
         <div>
-        <h2>Steps to <span>Create</span></h2>
+        <h2>Steps to <span class="create">Create</span></h2>
         <p class="p2">The AR application used to develop and test the AR drag and drop paradigm
             <br> has been developed using the Unity engine, and then compiled as an Android apk. 
             <br> AR tracking is performed thanks to the Vuforia SDK, which can be easily integrated in Unity. 
