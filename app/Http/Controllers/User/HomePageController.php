@@ -27,7 +27,7 @@ class HomePageController extends Controller
         return view("user.inspiration");
     }
 
-    public function virtual(){
+    public function virtual_showroom(){
         return view("user.virtual");
     }
 

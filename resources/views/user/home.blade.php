@@ -38,8 +38,8 @@
 Our website provides you with all interior design and 
 architecture concepts, as well as styling for commercial
 residential, and administrative spaces.
-By balancing the art and science of designing an interior space
-we deliver the perfect
+By balancing the art and science of designing an interior 
+space we deliver the perfect
 combination of technical and artistic aspects 
 to provide our clients with extreme satisfaction.
               </pre>
@@ -80,7 +80,8 @@ to provide our clients with extreme satisfaction.
         You can maximize your home safety and security, and
         keep an eye on your home wherever you are.
         Moreover, you will enjoy more accessibility to monitor
-        your power consumption for each electrical device in your house.
+        your power consumption for each electrical
+        device in your house.
                 
               </pre>
               </div>
@@ -181,28 +182,28 @@ bespoke solution tailored to your needs and wishes.
         <div class="third_collection">
         
            <div class="image_slider">
-           <img src="{{asset("images/home/4f8443799591c97b327faa7f13eb1df9.jpg")}}" width="470px" style="height: 600px;" >
-           <img src="{{asset("images/home/5da519561e7201f442c2238e0d33537c.jpg")}}" width="470px" style="height: 600px;" >
-           <img src="{{asset("images/home/15f03689b6833ed599fed68c51c0f562.jpg")}}" width="470px" style="height: 600px;">
-           <img src="{{asset("images/home/30ac113c4bbaff6283c92a557211a5d4.jpg")}}" width="470px"  style="height: 600px;">
+           <img src="{{asset("images/home/4f8443799591c97b327faa7f13eb1df9.jpg")}}" width="355px" style="height: 600px;" >
+           <img src="{{asset("images/home/5da519561e7201f442c2238e0d33537c.jpg")}}" width="355px" style="height: 600px;" >
+           <img src="{{asset("images/home/15f03689b6833ed599fed68c51c0f562.jpg")}}" width="355px" style="height: 600px;">
+           <img src="{{asset("images/home/30ac113c4bbaff6283c92a557211a5d4.jpg")}}" width="355px"  style="height: 600px;">
            </div>
            <div class="image_slider">
-            <img src="{{asset("images/home/79e991524a2a5d15180c30441299ad8f.jpg")}}" width="470px" style="height: 600px;">
-            <img src="{{asset("images/home/878ccb9e6c6d1eb7d5bb92efc210ad63.jpg")}}" width="470px" style="height: 600px;">
-            <img src="{{asset("images/home/354720e7960c899078c3bebef2c808b4.jpg")}}" width="470px" style="height: 600px;">
-            <img src="{{asset("images/home/8353130280b5c65696caa4d74ea10b6e.jpg")}}" width="470px"  style="height: 600px;">
+            <img src="{{asset("images/home/79e991524a2a5d15180c30441299ad8f.jpg")}}" width="355px" style="height: 600px;">
+            <img src="{{asset("images/home/878ccb9e6c6d1eb7d5bb92efc210ad63.jpg")}}" width="355px" style="height: 600px;">
+            <img src="{{asset("images/home/354720e7960c899078c3bebef2c808b4.jpg")}}" width="355px" style="height: 600px;">
+            <img src="{{asset("images/home/8353130280b5c65696caa4d74ea10b6e.jpg")}}" width="355px"  style="height: 600px;">
            </div>
            <div class="image_slider">
-            <img src="{{asset("images/home/feee2ec861fbf492f72cdbd3233e863d.jpg")}}" width="470px"  style="height: 600px;" >
-            <img src="{{asset("images/home/ffbcb67948def2e346d3d92ab4c64853.jpg")}}" width="470px" style="height: 600px;" >
-            <img src="{{asset("images/home/a01d1ef16e697ed1b6dd29d59d568208.jpg")}}" width="470px" style="height: 600px;" >
-            <img src="{{asset("images/home/914a2324b832138e8d021c9a5495011d.jpg")}}" width="470px"  style="height: 600px;">
+            <img src="{{asset("images/home/feee2ec861fbf492f72cdbd3233e863d.jpg")}}" width="355px"  style="height: 600px;" >
+            <img src="{{asset("images/home/ffbcb67948def2e346d3d92ab4c64853.jpg")}}" width="355px" style="height: 600px;" >
+            <img src="{{asset("images/home/a01d1ef16e697ed1b6dd29d59d568208.jpg")}}" width="355px" style="height: 600px;" >
+            <img src="{{asset("images/home/914a2324b832138e8d021c9a5495011d.jpg")}}" width="355px"  style="height: 600px;">
            </div>
            <div class="image_slider">
-            <img src="{{asset("images/home/timerSlider/100cf4ce4f9d605343abe45fea053434.jpg")}}" width="470px"  style="height: 600px;">
-            <img src="{{asset("images/home/timerSlider/296a26275905a00675cbb277d5d626ea.jpg")}}" width="470px" style="height: 600px;">
-            <img src="{{asset("images/home/timerSlider/670f3f9c80608fc75c5f7e720a7bdeca.jpg")}}" width="470px" style="height: 600px;" >
-            <img src="{{asset("images/home/timerSlider/662589d12342f47205744c7738bbf0e6.jpg")}}" width="470px"  style="height: 600px;" >
+            <img src="{{asset("images/home/timerSlider/100cf4ce4f9d605343abe45fea053434.jpg")}}" width="355px"  style="height: 600px;">
+            <img src="{{asset("images/home/timerSlider/296a26275905a00675cbb277d5d626ea.jpg")}}" width="355px" style="height: 600px;">
+            <img src="{{asset("images/home/timerSlider/670f3f9c80608fc75c5f7e720a7bdeca.jpg")}}" width="355px" style="height: 600px;" >
+            <img src="{{asset("images/home/timerSlider/662589d12342f47205744c7738bbf0e6.jpg")}}" width="355px"  style="height: 600px;" >
            </div>
         
         </div>
@@ -282,9 +283,9 @@ bespoke solution tailored to your needs and wishes.
 </div>
         <div class="contnier_6">
         
-          <img src="{{asset("images/home/slider2/1.png")}}" width="500px">
-          <img src="{{asset("images/home/slider2/2.png")}}" width="450px">
-          <img src="{{asset("images/home/slider2/3.png")}}" width="450px" >
+          <img src="{{asset("images/home/slider2/1.png")}}" width="300px">
+          <img src="{{asset("images/home/slider2/2.png")}}" width="250px">
+          <img src="{{asset("images/home/slider2/3.png")}}" width="250px" >
         
           <div class="rightside_contnier_6"> 
            <p class="hello"> Ciao </p> 
