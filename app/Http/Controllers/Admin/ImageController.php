@@ -16,7 +16,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-        $images = Image::select()->paginate(5);
+        $images = Image::select()->get();
         return view('admin.image.index',compact('images'));
     }
 
@@ -121,7 +121,7 @@ class ImageController extends Controller
         $rules=[
             'name'=>['required','Max:255'],
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg',
-            'discreption'=>['required'],
+            'discreption'=>['required','Max:255'],
         ];
     }
 }

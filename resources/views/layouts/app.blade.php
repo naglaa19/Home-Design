@@ -89,7 +89,7 @@
          
         {{-- home  --}}
        <li>                                   
-            <a href="/">
+            <a href="{{route('home')}}">
             <i class="fa fa-home fa-lg"></i>     
             <span class="nav-text">Home</span>
             </a>
@@ -129,12 +129,12 @@
        </li>
          
        {{-- Items  --}}
-       <li class="darkerli">
+       {{-- <li class="darkerli">
             <a href="http://startific.com">
             <i class="fa fa-glass fa-lg"></i>
             <span class="nav-text">Items</span>
             </a>
-       </li>
+       </li> --}}
 
        {{-- QA Section  --}}
         <li class="darkerli">

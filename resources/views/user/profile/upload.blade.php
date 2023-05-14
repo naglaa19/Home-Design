@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-                <form method="POST" action="{{ route('profile/store') }}"enctype="multipart/form-data" >
+                <form method="POST" action="{{ route('profile/store') }}" enctype="multipart/form-data" >
                     @csrf
                     {{-- Name --}}
                     <div class="mb-3">

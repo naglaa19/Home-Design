@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>3D viewer & AR</title>
+        <title>Drag & Drop</title>
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/drag_drop.css')}}">
     </head>

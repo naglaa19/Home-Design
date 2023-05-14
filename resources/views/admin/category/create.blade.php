@@ -17,6 +17,14 @@
                       @enderror
                     
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Cover</label>
+                        <input type="file" class="form-control" required name="image" id="exampleInputEmail1"
+                               aria-describedby="emailHelp">
+                        @error('image')
+                        <div class="text-danger">{{$message}}</div>
+                        @enderror
+                    </div>
                     <button type="submit" class="btn btn-primary">Add</button>
                 </form>
         </div>

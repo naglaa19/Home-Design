@@ -77,7 +77,10 @@ body{
 }  
 
 .menu li:hover {
- background: #073769;
+    /* 5f475b */
+    /* rgb(162,193,179) */
+ /* background: #073769; */
+ background-color: rgb(162,193,179);
 }  
 
 .menu > li > a {

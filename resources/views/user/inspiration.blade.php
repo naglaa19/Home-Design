@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>3D viewer & AR</title>
+        <title>Inspiration Spaces</title>
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/inspiration.css')}}">
     </head>

@@ -10,6 +10,7 @@
 body{
   min-height: 100vh;
   background-color:#181818;
+  /* background-color:#d6e0ec;  */
   justify-content: center;
   align-items: center;
 }
@@ -157,10 +158,11 @@ body{
 .back-text h1,
 .back-text p{
   position: relative;
-  top: 200px;
+  top: 170px;
   color: #fff;
   font-size: 42px;
   text-align: center;
+  z-index: -50;
 }
 
 .back-text h1{

@@ -97,17 +97,17 @@ Route::group(['middleware' => 'auth:admin'],function(){
 
 
 // user routes
+Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'home'])->name('/main');
 
 Route::group(['middleware' => 'auth'],function(){
     //home
-    Route::get('/', [App\Http\Controllers\User\HomePageController::class, 'home'])->name('/main');
-    Route::get('/AR', [App\Http\Controllers\User\HomePageController::class, 'ar'])->name('/ar');
-    Route::get('/drag&drop', [App\Http\Controllers\User\HomePageController::class, 'drag_drop'])->name('/drag');
-    Route::get('/inspiration', [App\Http\Controllers\User\HomePageController::class, 'inspiration'])->name('/inspiration');
-    Route::get('/virtual', [App\Http\Controllers\User\HomePageController::class, 'virtual_showroom'])->name('/virtual');
+    Route::get('/AR', [App\Http\Controllers\User\HomePageController::class, 'ar'])->name('ar');
+    Route::get('/drag&drop', [App\Http\Controllers\User\HomePageController::class, 'drag_drop'])->name('drag');
+    Route::get('/inspiration', [App\Http\Controllers\User\HomePageController::class, 'inspiration'])->name('inspiration');
+    Route::get('/virtual', [App\Http\Controllers\User\HomePageController::class, 'virtual_showroom'])->name('virtual');
 
     //profile
-    Route::group(['prefix' => 'Profile'],function(){
+    Route::group(['prefix' => 'profile'],function(){
         Route::get('/{id}', [App\Http\Controllers\User\ProfileController::class, 'index'])->name('profile/index');
         Route::post('Store', [App\Http\Controllers\User\ProfileController::class, 'store'])->name('profile/store');
         Route::get('Create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('profile/create');
@@ -122,6 +122,9 @@ Route::group(['middleware' => 'auth'],function(){
     //contact us 
     Route::get('contact/us', [App\Http\Controllers\User\ContactFormController::class, 'contact_form'])->name('contact/form');
     Route::post('contact-us', [App\Http\Controllers\User\ContactFormController::class, 'store'])->name('contact/store');
+
+    //category
+    Route::get('/categories', [App\Http\Controllers\User\CategoryController::class, 'index'])->name('category');
 
     //images
     Route::get('/images/{id}', [App\Http\Controllers\User\HomePageController::class, 'show'])->name('/images');

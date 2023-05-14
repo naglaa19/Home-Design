@@ -104,11 +104,13 @@ body{
 .back-text h1,
 .back-text p{
   position: relative;
-  top: 200px;
+  top: 170px;
   color: #fff;
   font-size: 42px;
   text-align: center;
+  z-index: -50;
 }
+
 
 .headline h2{
   text-align: center;

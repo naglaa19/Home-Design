@@ -45,7 +45,7 @@ class HomePageController extends Controller
     {
         $category = Category::select()->find($id);
         $image = Image::select()->where('category_id',$id)->get();
-        return view('user.category',compact('image','category'));
+        return view('user.images',compact('image','category'));
     }
 
     

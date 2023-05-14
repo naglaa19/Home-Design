@@ -24,7 +24,7 @@
     {{-- <link rel="stylesheet" type="text/css" href="css/admin.css"> --}}
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo/home.png')}}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo/LogoM.png')}}">
 </head>
 <body>
     <div id="app">
@@ -32,7 +32,7 @@
             <div class="container flexx">
                 <div class="im">
                 <a class="navbar-brand im" href="{{ url('/') }}">
-                    <img style="width: 85px " class="im" src="{{ asset('images/logo/home.png')}}">
+                    <img style="width: 100px " class="im" src="{{ asset('images/logo/MmLogo.png')}}">
                 </a>
             </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -85,12 +85,12 @@
         <ul class="menu cf">
           <li><a href="{{route('/main')}}">Home</a></li>
           <li>
-            <a href="#">Services</a>
-            <ul class="submenu">
+            <a href="{{route('category')}}">Categories</a>
+            {{-- <ul class="submenu">
                 @foreach (App\Http\Controllers\GlobalVariableController::global() as $category)
                     <li><a href="{{route('/images', $category->id)}}">{{$category->name}}</a></li>
                 @endforeach
-            </ul>         
+            </ul>          --}}
           </li>
           <li><a href="{{route('/FAQ')}}">Ask me</a></li>
           <li><a href="{{route('contact/form')}}">Contact Us</a></li>
@@ -108,7 +108,7 @@
 
             <div class="footer-left">
       
-                <img style="width: 140px"  src="{{ asset('images/logo/home.png')}}">
+                <img style="width: 140px; margin-left:60px;"  src="{{ asset('images/logo/LogoM.png')}}">
       
               <p class="footer-links">
                 <a href="#" class="link-1">Home</a>

@@ -33,7 +33,7 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        return view('user.profile.upload_design');
+        return view('user.profile.upload');
     }
 
     /**
@@ -56,7 +56,7 @@ class ProfileController extends Controller
              'user_id'=>Auth::user()->id,
         ]);
 
-        return redirect()->route('profile/index')->with('success', __('messages.Added'));
+        // return redirect()->route('profile/index')->with('success', __('messages.Added'));
     }
 
 

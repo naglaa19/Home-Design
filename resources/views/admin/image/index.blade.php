@@ -31,7 +31,8 @@
                     <th scope="row">{{$image->id}}</th>
                     <td>{{$image->name}}</td>
                     <td><img src="{{ asset('images/images/'. $image->image) }}" width="50" height="50"
-                        alt=""></td>
+                        alt="">
+                    </td>
                     <td>{{$image->discreption}}</td>
                     <td> 
                         <?php
@@ -48,10 +49,10 @@
             </tbody>
         </table>
         <a href="{{ route('Image/create') }}" class="btn btn-secondary ">Add New Image</a>
-       <div class="d-flex justify-content-center" style="position: relative;
+       {{-- <div class="d-flex justify-content-center" style="position: relative;
        left: 40%; width:50px;">
             {!! $images->links() !!}
-        </div>
+        </div> --}}
     </div>
 </div>
 </div>

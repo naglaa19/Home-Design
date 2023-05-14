@@ -39,8 +39,14 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $rules = $this->getRules();
+        $image = $request->file('image');
+        $file_extention = $image->getClientOriginalName();
+        $file_name = \Str::random(20) . $file_extention;
+        $path = 'images/category';
+        $image->move($path, $file_name);
         Category::insert([
-          'name' => $request->name,    
+          'name' => $request->name,   
+          'image' =>$file_name, 
         ]);
         return redirect()->route('Category/index')->with('success', __('messages.Added'));         
     }
@@ -79,8 +85,22 @@ class CategoryController extends Controller
     public function update(Request $request, $id)
     {
         $rules = $this->getRules();
+
+        if($request->image==null)
+        {
+            $file_name=$request->old_image;
+        }
+        else
+        {
+            $image = $request->file('image');
+            $file_extention = $image->getClientOriginalName();
+            $file_name = \Str::random(20) . $file_extention;
+            $path = 'images/category';
+            $image->move($path, $file_name);
+        }
         $category=Category::find($id)->update([
             'name'=>$request->name,
+            'image' =>$file_name, 
         ]);
         return redirect()->route('Category/index')->with('success', __('messages.Updated'));
     }

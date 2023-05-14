@@ -157,26 +157,36 @@ bespoke solution tailored to your needs and wishes.
           <img src="{{asset("images/home/fea1_1x.png")}}" width="300px" height="200px">
           <h1 class="h1_second_collection">3D Viewer & AR</h1>
           <p>Present your products with 3D model and AR interactions.</p>
-          <button class="learn">Learn More</button>
+          <a href="{{ route('ar') }}">
+            <button class="learn">Learn More</button>
+          </a>
         
         </div>
         <div class="second_collection_2">
           <img src="{{asset("images/home/fea2_1x.png")}}" width="300px" height="200px">
-          <h1 class="h1_second_collection">Photo & Video Studio™</h1>
+          <h1 class="h1_second_collection">Drag & Drop™</h1>
           <p>Create product photos and videos virtually, in unlimited scenes.</p>
-          <button class="learn">Learn More</button>
+          <a href="{{ route('drag') }}">
+            <button class="learn">Learn More</button>
+          </a>
         </div>
         <div class="second_collection_3">
           <img src="{{asset("images/home/fea3_1x.png")}}" width="300px" height="200px">
           <h1 class="h1_second_collection">Virtual Showroom</h1>
           <p>Customizable online showroom supporting system integration.</p>
-          <button class="learn">Learn More</button>
+          
+            <a href="{{ route('virtual') }}">
+              <button class="learn">Learn More</button>
+            </a>
+          
         </div>
         <div class="second_collection_4">
           <img src="{{asset("images/home/fea4_1x.png")}}"  width="300px" height="200px">
           <h1 class="h1_second_collection">Inspiration Spaces</h1>
           <p>Parameter-based spaces for inspiration and quick orders.</p>
-          <button class="learn">Learn More</button>
+          <a href="{{ route('inspiration') }}">
+            <button class="learn">Learn More</button>
+          </a>
         </div>
         </div>
         <div class="third_collection">
