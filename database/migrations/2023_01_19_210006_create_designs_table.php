@@ -17,6 +17,7 @@ class CreateDesignsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('image');
+            $table->string('caption');
             $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
 

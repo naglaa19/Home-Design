@@ -41,8 +41,8 @@ body{
   background-color: #181818;
   margin-bottom: 30px;
 }
-
-.back-nav img{
+*/
+/* .back-nav img{
   opacity: 0.4;
 }
 
@@ -71,7 +71,7 @@ body{
 .back-text h1{
   font-size: 100px;
   text-transform: uppercase;
-} */
+}  */
 
 
 @import url(fontawesome-all.min.css);
@@ -171,6 +171,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	/* height: 2000px; */
 }
 
 ol, ul {
@@ -288,14 +289,14 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		color: #34a58e;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #34a58e !important;
+			/* color: #34a58e !important; */
 		}
 
 	strong, b {
@@ -1658,6 +1659,7 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
+				/* bottom: 500px; */
 			}
 
 			#main .thumb > h2 {

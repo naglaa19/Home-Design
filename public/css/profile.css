@@ -175,7 +175,7 @@ body{
 }
 
 body {
-  background-color: #181818 !important;
+  background-color: #101010  !important;
   min-height: 100vh;
   overflow-x:hidden;
 }
@@ -196,6 +196,14 @@ a{
   border-color: #5f475b !important;
   border-width: 4px;
   border-style: groove;
+  width: 950px;
+  margin-left: -190px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
 }
 
 .txt
@@ -216,4 +224,17 @@ a{
   background-color: black;
   
   padding: 5px;
+}
+
+.img-fluid
+{
+  /* display: flex !important; */
+  /* gap: 1px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+ /* max-width: 100px; */
+ /* flex-wrap: wrap;
+ flex-direction: row; */
+height: 300px;
+width: 100%;
 }

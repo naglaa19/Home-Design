@@ -53,7 +53,10 @@ body{
 
 }
 .menu {  
-    margin-left: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 320px; */
     padding-top: 13px;
     width: 100% !important;   
     /* width: fit-content;  */
@@ -77,10 +80,11 @@ body{
 }  
 
 .menu li:hover {
+    /* 255,188 */
     /* 5f475b */
     /* rgb(162,193,179) */
  /* background: #073769; */
- background-color: rgb(162,193,179);
+ background-color: #ffbb00c7;
 }  
 
 .menu > li > a {

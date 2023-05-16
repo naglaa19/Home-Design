@@ -7,6 +7,7 @@
 }
 body{
     background-color: #080710;
+    /* height: 1000px; */
 }
 .background{
     width: 430px;
@@ -33,8 +34,8 @@ body{
 .shape:last-child{
     background: linear-gradient(
         to right,
-        #ff512f,
-        #f09819
+        #a2c1b3,
+        #5f475b
     );
     right: -30px;
     bottom: -80px;
@@ -119,4 +120,9 @@ button{
 }
 .social i{
   margin-right: 4px;
+}
+
+.footer-distributed
+{
+    margin-top: 690px;
 }

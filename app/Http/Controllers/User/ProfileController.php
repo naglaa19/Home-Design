@@ -31,11 +31,17 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // public function create()
+    // {
+    //     return 'ddd';
+    //     // return view('user.profile.upload');
+    // }
+
     public function create()
     {
+        // dd(6);
         return view('user.profile.upload');
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -53,10 +59,11 @@ class ProfileController extends Controller
         Design::create([
              'name'=>$request->name,
              'image'=>$file_name,
+             'caption'=> $request->caption,
              'user_id'=>Auth::user()->id,
         ]);
 
-        // return redirect()->route('profile/index')->with('success', __('messages.Added'));
+        return redirect()->route('profile/index',Auth::user()->id)->with('success', __('messages.Added'));
     }
 
 
@@ -99,7 +106,7 @@ class ProfileController extends Controller
              'email'=>$request->email,
              'password'=>Hash::make($request->password),
         ]);
-        return redirect()->route('profile/index')->with('success', __('messages.Updated'));
+        return redirect()->route('profile/index',Auth::user()->id)->with('success', __('messages.Updated'));
     }
 
     /**

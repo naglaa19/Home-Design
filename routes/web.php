@@ -110,33 +110,36 @@ Route::group(['middleware' => 'auth'],function(){
     Route::group(['prefix' => 'profile'],function(){
         Route::get('/{id}', [App\Http\Controllers\User\ProfileController::class, 'index'])->name('profile/index');
         Route::post('Store', [App\Http\Controllers\User\ProfileController::class, 'store'])->name('profile/store');
-        Route::get('Create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('profile/create');
+        Route::get('create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('create');
         Route::get('Edit/{id}', [App\Http\Controllers\User\ProfileController::class, 'edit'])->name('profile/edit');
         Route::post('Update/{id}', [App\Http\Controllers\User\ProfileController::class, 'update'])->name('profile/update');
     });
 
-    //faq
-    Route::get('Ask_Me/{id}', [App\Http\Controllers\User\FAQController::class, 'show'])->name('FAQ/show');
-    Route::get('/Ask_Me', [App\Http\Controllers\User\FAQController::class, 'allQA'])->name('/FAQ');
+    // Route::get('profile/create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('profile/create');
 
-    //contact us 
-    Route::get('contact/us', [App\Http\Controllers\User\ContactFormController::class, 'contact_form'])->name('contact/form');
-    Route::post('contact-us', [App\Http\Controllers\User\ContactFormController::class, 'store'])->name('contact/store');
-
-    //category
-    Route::get('/categories', [App\Http\Controllers\User\CategoryController::class, 'index'])->name('category');
-
-    //images
-    Route::get('/images/{id}', [App\Http\Controllers\User\HomePageController::class, 'show'])->name('/images');
-
-    //Design
-    Route::get('/designs', [App\Http\Controllers\User\DesignController::class, 'index'])->name('designs');
-    Route::get('/comment/{id}', [App\Http\Controllers\User\DesignController::class, 'show'])->name('comments');
-
-    //comments
-    Route::post('/comments', [App\Http\Controllers\User\CommentController::class, 'store'])->name('comment/store');
+    
     // Route::get('comment/Create', [App\Http\Controllers\User\CommentController::class, 'create'])->name('comment/create');
     
 });
 
 
+//faq
+Route::get('Ask_Me/{id}', [App\Http\Controllers\User\FAQController::class, 'show'])->name('FAQ/show');
+Route::get('/Ask_Me', [App\Http\Controllers\User\FAQController::class, 'allQA'])->name('/FAQ');
+
+//contact us 
+Route::get('contact/us', [App\Http\Controllers\User\ContactFormController::class, 'contact_form'])->name('contact/form');
+Route::post('contact-us', [App\Http\Controllers\User\ContactFormController::class, 'store'])->name('contact/store');
+
+//category
+Route::get('/categories', [App\Http\Controllers\User\CategoryController::class, 'index'])->name('category');
+
+//images
+Route::get('/images/{id}', [App\Http\Controllers\User\HomePageController::class, 'show'])->name('/images');
+
+//Design
+Route::get('/designs', [App\Http\Controllers\User\DesignController::class, 'index'])->name('designs');
+Route::get('/comment/{id}', [App\Http\Controllers\User\DesignController::class, 'show'])->name('comments');
+
+//comments
+Route::post('/comments', [App\Http\Controllers\User\CommentController::class, 'store'])->name('comment/store');

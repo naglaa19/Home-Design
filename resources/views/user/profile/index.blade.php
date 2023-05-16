@@ -65,7 +65,7 @@
                   class="rounded mb--4 img-thumbnail"
                   />
                 <a href="{{route('profile/edit',$user->id)}}" class="btn btn-outline-dark btn-sm btn-block">Edit Profile</a>
-                <a href="{{route('profile/create')}}" class="btn btn-outline-dark btn-sm btn-block">Upload Designs</a>
+                <a href="{{route('create')}}" class="btn btn-outline-dark btn-sm btn-block">Upload Designs</a>
               </div>
               <div class="media-body mb-5 text-black">
                 <h4 class="mt-0 mb-5 name">{{$user->name}}</h4>

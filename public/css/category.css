@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	background-color: #181811 !important;
+	background-color: #101010 !important;
 }
 
 ol, ul {
@@ -156,11 +156,11 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		/* border-bottom: dotted 1px rgba(88, 88, 88, 0.5); */
 	}
 
 		.color:hover {
-			border-bottom-color: transparent;
+			/* border-bottom-color: transparent; */
 			color: #ef9db0a4 !important;
 		}
 

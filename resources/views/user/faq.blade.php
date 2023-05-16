@@ -31,11 +31,11 @@
 </div>
 
 <div class="sections">
-  <div class="list-group">
+  {{-- <div class="list-group"  > --}}
     @foreach($section as $sec)
-    <a href="{{route('FAQ/show',$sec->id)}}" class="only list-group-item list-group-item-action link" aria-current="true">{{$sec->name}}</a>
+    <a href="{{route('FAQ/show',$sec->id)}}" class="qa-section" style="background-color: aliceblue; " aria-current="true">{{$sec->name}}</a>
     @endforeach
-  </div>
+  {{-- </div> --}}
 </div>
 
 <div class="containerFluid">

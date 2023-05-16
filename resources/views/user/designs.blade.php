@@ -32,13 +32,16 @@
     @endforeach
 </div> --}}
 
+{{-- <div class="preload pre-hidden">
+
+</div> --}}
 
 <div id="wrapper">
 
 
    <!-- Banner -->
-     <section id="banner" class="major">
-       <div class="inner">
+     <section id="banner" class="major" style="background-color:#101010;">
+       <div class="inner" >
          <header class="major">
            <h1>DESIGNS</h1>
          </header>
@@ -60,10 +63,10 @@
           @foreach ($design as $design)
            <article>
              <span class="image">
-               <img src="{{asset('images/images/'.$design->image)}}" alt="" />
+               <img src="{{asset('images/designs/'.$design->image)}}" alt="" />
              </span>
              <header class="major">
-               <h3><a href="landing.html" class="link">{{$design->name}}</a></h3>
+               <h3><a href="{{route('comments',$design->id)}}" class="link">{{$design->name}}</a></h3>
                <p>{{$design->discreption}}</p>
              </header>
            </article>
@@ -83,6 +86,18 @@
       <script src="{{asset('js/util.js')}}"></script>
       <script src="{{asset('js/main.js')}}"></script>
 
+      {{-- <script>
+
+        window,addEventListener("load", ()=>{
+          const loader = document.querySelector(".preload");
+
+          loader.classList.add("pre-hidden");
+          loader.addEventListener("transitionend" , () =>{
+            document.body.removeChild(loader);
+          })
+
+        })
+      </script> --}}
    
    </body>
 </html>

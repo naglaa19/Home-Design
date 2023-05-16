@@ -28,11 +28,11 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark  shadow-sm" style="background-color: black">
             <div class="container flexx">
                 <div class="im">
                 <a class="navbar-brand im" href="{{ url('/') }}">
-                    <img style="width: 100px " class="im" src="{{ asset('images/logo/MmLogo.png')}}">
+                    <img style="width: 110px " class="im" src="{{ asset('images/logo/MmLogo.png')}}">
                 </a>
             </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -41,6 +41,23 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Right Side Of Navbar -->
+                    <ul class="menu cf">
+                        <li><a href="{{route('/main')}}">Home</a></li>
+                        <li>
+                          <a href="{{route('category')}}">Categories</a>
+                          {{-- <ul class="submenu">
+                              @foreach (App\Http\Controllers\GlobalVariableController::global() as $category)
+                                  <li><a href="{{route('/images', $category->id)}}">{{$category->name}}</a></li>
+                              @endforeach
+                          </ul>          --}}
+                        </li>
+                        <li><a href="{{route('/FAQ')}}">Ask me</a></li>
+                        <li><a href="{{route('contact/form')}}">Contact Us</a></li>
+                        <li><a href="{{route('designs')}}">Designs</a></li>
+                        @if (Auth::user())
+                            <li><a href="{{route('profile/index',Auth::user()->id)}}">Profile</a></li>
+                        @endif
+                      </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
@@ -78,32 +95,18 @@
             </div>
         </nav>
     </div>
-    @if (Auth::user())
+   
 
-    <nav class="navSpace">	
+    {{-- <nav class="navSpace">	 --}}
         {{-- <a class="logo" href="#"><img src="home.png" width="70px" height="50px"></a> --}}
-        <ul class="menu cf">
-          <li><a href="{{route('/main')}}">Home</a></li>
-          <li>
-            <a href="{{route('category')}}">Categories</a>
-            {{-- <ul class="submenu">
-                @foreach (App\Http\Controllers\GlobalVariableController::global() as $category)
-                    <li><a href="{{route('/images', $category->id)}}">{{$category->name}}</a></li>
-                @endforeach
-            </ul>          --}}
-          </li>
-          <li><a href="{{route('/FAQ')}}">Ask me</a></li>
-          <li><a href="{{route('contact/form')}}">Contact Us</a></li>
-          <li><a href="{{route('designs')}}">Designs</a></li>
-          <li><a href="{{route('profile/index',Auth::user()->id)}}">Profile</a></li>
-        </ul>
-    </nav>
-       @endif
+        
+    {{-- </nav> --}}
+       
         <main >
             @yield('content')
         </main>
 
-        @if (Auth::user())
+        {{-- @if (Auth::user()) --}}
         <footer class="footer-distributed">
 
             <div class="footer-left">
@@ -163,7 +166,7 @@
             </div>
       
           </footer>
-          @endif
+          {{-- @endif --}}
     </div>
 </body>
 </html>

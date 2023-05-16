@@ -9,30 +9,53 @@
 }
 body{
   width: 100%;
-  background-color:#181818 !important;
+  background-color:#101010  !important;
+  /* overflow: auto; */
+  /* height: 2000px; */
 }
 
 .containerFluid {
   width: 40%;
   margin: 0 auto;
-  margin-top: 600px;
+  margin-top: 550px;
   margin-bottom: 100px;
   
 }
 
+.qa-section
+{
+  padding: 15px 30px 15px 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 100px;
+  background-color: #a2c1b3 !important;
+  text-decoration: none ;
+  color: #fff;
+  font-weight: bolder;
+  border: #16222d solid 2px;
+}
+
+.qa-section:hover
+{
+  transform: scale(1.05);
+  background-color: #a2c1b3cd; 
+}
+
+
 .sections{
   position: absolute;
-  top: 750px;
-  bottom: 50px;
-  /* background-color: rebeccapurple; */
+  top: 840px;
+  bottom: 100px;
+  background-color: rebeccapurple;
 }
 
 .accordion {
   width: 100%;
   padding: 0 5px;
-  border: 2px solid #6db5ff;
+  border: 2px solid #ffbb00c7;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 10px;
   display: flex;
   margin: 10px 0;
   align-items: center;
@@ -43,7 +66,7 @@ body{
   width: 30px;
   height: 30px;
   background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px 7px #6db5ff;
+    no-repeat 8px 7px #ffbb00c7;
   border-radius: 50%;
   float: left;
   transition: all 0.5s ease-in;
@@ -52,13 +75,13 @@ body{
 .accordion h5 {
   font-size: 22px;
   margin: 0;
-  padding: 3px 0 0 0;
+  padding: 8px 0 8px 0;
   font-weight: normal;
-  color: #1f5c9a;
+  color: #fff;
 }
 
 .active {
-  background-color: #6db5ff;
+  background-color:#ffbb00c7;
   color: #fff;
 }
 
@@ -69,7 +92,7 @@ body{
 
 .panel {
   padding: 0 15px;
-  border-left: 1px solid #6db5ff;
+  border-left: 1px solid #ffbb00c7;
   margin-left: 25px;
   font-size: 14px;
   text-align: justify;
@@ -111,7 +134,9 @@ body{
   z-index: -50;
 }
 
-
+.back-text p{
+  color: #ffbb00ee;
+}
 .headline h2{
   text-align: center;
   left: 50%;
@@ -124,4 +149,10 @@ body{
 .back-text h1{
   font-size: 60px;
   text-transform: uppercase;
+}
+
+
+a:hover
+{
+  color: #fff !important;
 }

@@ -16,13 +16,7 @@
         <title>{{$category->name}}</title>
     </head>
 
-      {{-- <div class="back-img">
-        <img src="{{asset('images/images/black3.jpeg')}}">
-        <div class="back-text">
-          <h1>{{$category->name}}</h1>
-          <p>We Have All Ideas for You</p>
-        </div>
-      </div>
+      {{-- 
         
     <!--Start page content-->
     <div class="contanier">
@@ -46,7 +40,13 @@
    <script src="{{asset('js/lightbox.js')}}"></script>  --}}
     <!-- footer section start -->
     <body class="is-preload">
-
+      {{-- <div class="back-img">
+        <img src="{{asset('images/images/black3.jpeg')}}">
+        <div class="back-text">
+          <h1>{{$category->name}}</h1>
+          <p>We Have All Ideas for You</p>
+        </div>
+      </div> --}}
       <!-- Main -->
         <div id="main">
           @foreach($image as $img)
