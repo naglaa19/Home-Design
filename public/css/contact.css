@@ -48,7 +48,7 @@ body{
 }
 
 .contact-form .text-box{
-  background: #000;
+  background:#ffffff;
   color: #fff;
   border: none;
   width: calc(50% - 10px);
@@ -56,7 +56,8 @@ body{
   padding: 12px;
   font-size: 15px;
   border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(Contact Us
+#ffffff, 0.1);
   margin-bottom: 20px;
   opacity: 0.9;
 }
@@ -66,7 +67,7 @@ body{
 }
 
 .contact-form textarea{
-  background: #000;
+  background:#ffffff;
   color: #fff;
   border: none;
   width: 100%;
@@ -99,7 +100,7 @@ body{
 }
 
 .contact-form .send-btn:hover{
-  background: #ffbb00;
+  background: #ffffff;
 }
 
 /* @media screen and (max-width: 950px){

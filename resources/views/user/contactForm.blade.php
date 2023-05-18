@@ -11,13 +11,14 @@
   <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> --}}
 </head>
 <body>
-  <div class="back-nav">
-    <img src="{{asset('images/images/black3.jpeg')}}">
-    <div class="back-text">
-      <h1>Contact Us</h1>
-      <p>Get inTouch</p>
-    </div>
+<div class="back-nav">
+  <img  src="{{asset('img/7acf05bde65f33452c0306982de1251e.jpg')}}">
+  <div class="back-text">
+    <h1 style="color:#112233 ;
+  text-align: center; padding-top:50px;">Contact Us</h1>
+    <p>Get inTouch</p>
   </div>
+</div>
   <div class="headline">
     <h2>Leave your messgae</h2>
   </div>

@@ -23,9 +23,10 @@
 
 
 <div class="back-nav">
-  <img style="" src="{{asset('images/images/black3.jpeg')}}">
+  <img style="" src="{{asset('img/7acf05bde65f33452c0306982de1251e.jpg')}}">
   <div class="back-text">
-    <h1>Frequently Asked Question</h1>
+    <h1 style="color:#112233 ;
+  text-align: center; padding-top:50px;">Frequently Asked Question</h1>
     <p>Ask Us</p>
   </div>
 </div>

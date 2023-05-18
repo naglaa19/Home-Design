@@ -13,7 +13,7 @@
       <title>Profile</title>
    </head>
    <body >
-  {{-- <div class="container container2">
+  {{-- <div class="container container2" >
     <div class="center">
    <div class="card">
       <img class="user_pic" src="{{asset('images/profile/'.$user->image)}}">
@@ -82,7 +82,7 @@
               <li class="list-inline-item">
                 <h5 class="font-weight-bold mb-0 d-block txt">{{$designs}}</h5>
                 <small class="text-black txt">
-                  <i class="fas fa-user mr-1 txt"> </i>Designs</small>
+                  <i class="fas fa-user mr-1 txt" > </i>Designs</small>
               </li>
             </ul>
           </div>

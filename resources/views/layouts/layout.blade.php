@@ -28,7 +28,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark  shadow-sm" style="background-color: black">
+        <nav class="navbar navbar-expand-md navbar-dark  shadow-sm" style="background-color:#112233">
             <div class="container flexx">
                 <div class="im">
                 <a class="navbar-brand im" href="{{ url('/') }}">
@@ -107,7 +107,7 @@
         </main>
 
         {{-- @if (Auth::user()) --}}
-        <footer class="footer-distributed">
+        <footer class="footer-distributed"  style="background-color:#112233" >
 
             <div class="footer-left">
       
