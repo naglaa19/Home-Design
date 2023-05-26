@@ -1,6 +1,13 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+:root {
+    /* --primary: #112233  ; */
+    --mint-green : #a2c1b3;
+    --white: #fff;
+    --light: #E8F5E9;
+    --dark: #283847;
+}
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -31,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	background-color: #101010 !important;
+	background-color: var(--white) !important;
 }
 
 ol, ul {
@@ -100,7 +107,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: var(--white);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -161,7 +168,7 @@ input, select, textarea {
 
 		.color:hover {
 			/* border-bottom-color: transparent; */
-			color: #ef9db0a4 !important;
+			color: var(--mint-green) !important;
 		}
 
 	strong, b {

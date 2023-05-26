@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Frequently Asked Questions</title>
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{asset('css/faq.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/ask.css')}}">
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -47,7 +47,7 @@
     <h5>{{$faq->question}}</h5>
   </div>
   <div class="panel">
-    <p style="color: #ffff">{{$faq->answer}}</p>
+    <p class="ans">{{$faq->answer}}</p>
   </div>
   @endforeach  
 </div>

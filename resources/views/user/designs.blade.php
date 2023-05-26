@@ -40,7 +40,7 @@
 
 
    <!-- Banner -->
-     <section id="banner" class="major" style="background-color:#101010;">
+     <section id="banner" class="major" >
        <div class="inner" >
          <header class="major">
            <h1>DESIGNS</h1>

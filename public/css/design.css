@@ -1,52 +1,17 @@
-/* *
-{
-    -webk-it-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body
-{
-    background-color: #181818 !important;
-}
-
-.clearfix
-{
-    clear: both;
-}
-
-.image {
-	display: inline-block;
-	text-align:center;
-	width: 350px;
-    margin-left: 18px;
-}
-
-.figure {
-	overflow: hidden;
-	margin: 20px;
-}
-.image img {
-    position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	cursor: pointer;
-    z-index: -55;
-}
-.image #zoom-In .figure img {
-	transform: scale(1);
-	transition: 0.8s ease-in-out;
-}
-.image #zoom-In .figure:hover img {
-	transform: scale(1.5);
-}
- */
-
 
 
 
  @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+:root {
+	/* --primary: #112233  ; */
+	--mint-green : #a2c1b3;
+	--white: #fff;
+	--light: #E8F5E9;
+	--dark: #283847;
+	--lighter-blue: #2d5173;
+  }
 
 /*
 	Forty by HTML5 UP
@@ -146,7 +111,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: var(--white);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -215,7 +180,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: var(--white);
 		font-weight: 600;
 	}
 
@@ -228,7 +193,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: var(--white);
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -2588,8 +2553,8 @@ input, select, textarea {
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #ffbb00c7;
-			color: #ffbb00c7;
+			box-shadow: inset 0 0 0 2px var(--dark);
+			color: var(--dark);
 		}
 
 		input[type="submit"]:active,
@@ -2598,8 +2563,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
-			box-shadow: inset 0 0 0 2px #ffbb00c7;
-			color: #ffbb00c7;
+			box-shadow: inset 0 0 0 2px var(--dark);
+			color: var(--dark);
 		}
 
 		input[type="submit"].icon:before,
@@ -3144,7 +3109,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: var(--mint-green);
 			content: '';
 			display: block;
 			height: 100%;

@@ -1,87 +1,14 @@
-/* *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family:'poppins',sans-serif;
-}
-
-body{
-  background-color: #181818;
-}
-
-.contanier{
-  margin-top: 470px;
-  width: 100%;
-  min-height: 100vh;
-  padding-left: 20px;
-  display:flex;
-  flex-wrap: wrap;
-} 
-
-.o img{
-  width: 450px;
-  border-radius: 5%;
-  height: 450px;
-  box-shadow: 5px 5px 20px black;
-  transition: .5s;
-  position: relative;
-  margin-left: 20px; 
-}
-.o:hover
-{
-  cursor: pointer;
-}
-.o img:hover
-{
-  transform: scale(1.1) rotate(-3deg);
-  
-}
-
-.card{
-  background-color: #181818;
-  margin-bottom: 30px;
-}
-*/
-/* .back-nav img{
-  opacity: 0.4;
-}
-
-.back-img{
-  z-index: -55;
-
-}
-.back-img img{
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  margin-bottom: 30px;
-  z-index: -55;
-}
-
-.back-text h1,
-.back-text p{
-  position: relative;
-  top: 170px;
-  color: #fff;
-  font-size: 42px;
-  text-align: center;
-  z-index: -50;
-}
-
-.back-text h1{
-  font-size: 100px;
-  text-transform: uppercase;
-}  */
-
-
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
-/*
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+:root {
+	/* --primary: #112233  ; */
+	--mint-green : #a2c1b3;
+	--white: #fff;
+	--light: #E8F5E9;
+	--dark: #283847;
+	--lighter-blue: #2d5173;
+}
 
 @-moz-keyframes spinner {
 	0% {
@@ -240,7 +167,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242629;
+		background: var(--white);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {

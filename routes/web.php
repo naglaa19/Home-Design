@@ -110,14 +110,14 @@ Route::group(['middleware' => 'auth'],function(){
     Route::group(['prefix' => 'profile'],function(){
         Route::get('/{id}', [App\Http\Controllers\User\ProfileController::class, 'index'])->name('profile/index');
         Route::post('Store', [App\Http\Controllers\User\ProfileController::class, 'store'])->name('profile/store');
-        Route::get('create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('create');
         Route::get('Edit/{id}', [App\Http\Controllers\User\ProfileController::class, 'edit'])->name('profile/edit');
         Route::post('Update/{id}', [App\Http\Controllers\User\ProfileController::class, 'update'])->name('profile/update');
     });
 
     // Route::get('profile/create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('profile/create');
 
-    
+    Route::get('create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('create');
+
     // Route::get('comment/Create', [App\Http\Controllers\User\CommentController::class, 'create'])->name('comment/create');
     
 });

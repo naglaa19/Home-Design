@@ -1,7 +1,17 @@
-
+:root {
+    /* --primary: #112233  ; */
+    --mint-green : #a2c1b3;
+    --white: #fff;
+    --light: #E8F5E9;
+    --dark: #283847;
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 body{
     overflow-x: hidden;
@@ -71,7 +81,7 @@ body{
 
 .menu a {
  display: block;
- color: #fff;
+ color: var(--white);
  text-transform: uppercase;
  text-decoration: none;
  font-family: Arial, Helvetica;
@@ -84,7 +94,8 @@ body{
     /* 5f475b */
     /* rgb(162,193,179) */
  /* background: #073769; */
- background-color: #ffffff;
+ color: var(--white) !important;
+ background-color: var(--mint-green);
 }  
 
 .menu > li > a {

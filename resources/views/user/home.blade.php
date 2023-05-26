@@ -16,7 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
-
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Lora:ital@1&family=Public+Sans:wght@300;400&family=Space+Mono:wght@700&display=swap" rel="stylesheet"> --}}
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -30,7 +32,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/home.css" rel="stylesheet">
+    <link href="{{ asset('css/home.css')}}" rel="stylesheet">
     </head>
     <body>
         <!-- Spinner Start
@@ -281,7 +283,7 @@
                             <p class="mb-4">Present your products with 3D model and AR interactions.
 
                             </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus  me-2" style="color:#fff;"></i>Read More</a>
+                            <a class="btn btn-sm" href="{{route('ar')}}"><i class="fa fa-plus  me-2" style="color:#fff;"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +301,7 @@
                             <p class="mb-4">Customizable online showroom supporting system integration.
 
                                 .</p>
-                            <a class="btn btn-sm" href=""><i  class="fa fa-plus  me-2" style="color:#fff;"></i>Read More</a>
+                            <a class="btn btn-sm" href="{{route('virtual')}}"><i  class="fa fa-plus  me-2" style="color:#fff;"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -317,7 +319,7 @@
                             <p class="mb-4">Parameter-based spaces for inspiration and quick orders.
 
                                 .</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus  me-2" style="color:#fff;"></i>Read More</a>
+                            <a class="btn btn-sm" href="{{route('inspiration')}}"><i class="fa fa-plus  me-2" style="color:#fff;"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -328,37 +330,42 @@
 
 
     <!-- Quote Start -->
-    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/posters-in-cozy-apartment-interior-royalty-free-image-943910360-1534189931.jpg">
+    <div id="#contact" class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/posters-in-cozy-apartment-interior-royalty-free-image-943910360-1534189931.jpg">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="display-5 text-center mb-5">Contact Us</h1>
+                        <form class="contact"  method="POST" action="{{ route('contact/store') }}"enctype="multipart/form-data">
+                            @csrf
                         <div class="row g-3">
+                            
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
+                                    <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Name" name="name">
                                     <label for="gname">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
+                                    <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Email" name="email">
                                     <label for="gmail">Your Email</label>
                                 </div>
                             </div>
                             
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px" name="message"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                                <button class="btn btn-primary py-3 px-4" type="submit" name="submit" >Send</button>
                             </div>
                         </div>
+                   
                     </div>
+                </form>
                 </div>
             </div>
         </div>
@@ -581,7 +588,7 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 
     </body> -->
 </html>

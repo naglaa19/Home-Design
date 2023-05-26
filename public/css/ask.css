@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
 
+:root {
+  /* --primary: #112233  ; */
+  --mint-green : #a2c1b3;
+  --white: #fff;
+  --light: #E8F5E9;
+  --dark: #283847;
+  --lighter-blue: #2d5173;
+}
 
 *{
   margin: 0;
@@ -9,7 +17,7 @@
 }
 body{
   width: 100%;
-  background-color:#ffffff  !important;
+  background-color:var(--white)  !important;
   /* overflow: auto; */
   /* height: 2000px; */
 }
@@ -29,11 +37,11 @@ body{
  justify-content: center;
  align-items: center;
  margin-left: 100px;
-  background-color: #a2c1b3 !important;
+  background-color: var(--mint-green) !important;
   text-decoration: none ;
-  color: #fff;
+  color: var(--white);
   font-weight: bolder;
-  border: #16222d solid 2px;
+  border: var(--dark) solid 1px;
 }
 
 .qa-section:hover
@@ -47,13 +55,13 @@ body{
   position: absolute;
   top: 840px;
   bottom: 100px;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 }
 
 .accordion {
   width: 100%;
   padding: 0 5px;
-  border: 2px solid #ffbb00c7;
+  border: 2px solid var(--dark);
   cursor: pointer;
   border-radius: 10px;
   display: flex;
@@ -66,7 +74,7 @@ body{
   width: 30px;
   height: 30px;
   background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px 7px #ffbb00c7;
+    no-repeat 8px 7px var(--dark);
   border-radius: 50%;
   float: left;
   transition: all 0.5s ease-in;
@@ -77,22 +85,23 @@ body{
   margin: 0;
   padding: 8px 0 8px 0;
   font-weight: normal;
-  color: #fff;
+  color: var(--dark);
 }
 
 .active {
-  background-color:#ffbb00c7;
-  color: #fff;
+  background-color:var(--mint-green);
+  border-color: var(--mint-green);
+  color: var(--white) !important;
 }
 
 .active .icon {
   background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
-    no-repeat 8px -25px #fff;
+    no-repeat 8px -25px var(--white);
 }
 
 .panel {
   padding: 0 15px;
-  border-left: 1px solid #ffbb00c7;
+  border-left: 1px solid var(--dark);
   margin-left: 25px;
   font-size: 14px;
   text-align: justify;
@@ -100,7 +109,10 @@ body{
   max-height: 0;
   transition: all 0.3s ease-in;
 }
-
+.ans{
+ color: var(--dark);
+ font-weight: bold;
+}
 
 .link {
   background-color: #16222d !important;
@@ -135,7 +147,7 @@ body{
 }
 
 .back-text p{
-  color: #ffbb00ee;
+  color: var(--lighter-blue);
 }
 .headline h2{
   text-align: center;

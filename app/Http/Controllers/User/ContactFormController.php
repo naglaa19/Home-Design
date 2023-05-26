@@ -12,7 +12,6 @@ class ContactFormController extends Controller
 {
     public function contact_form()
     {
-        // $category = Category::select()->get();
         return view('user.contactForm' );
     }
   
@@ -34,7 +33,7 @@ class ContactFormController extends Controller
             'message' =>  $request->message,
         ]);
   
-        return redirect()->route('contact/form')->with(['success' => 'Thank you for contact us. we will contact you shortly.']);
+        return redirect()->route('/main')->with(['success' => 'Thank you for contact us. we will contact you shortly.']);
     }
 
     protected function getRules()
