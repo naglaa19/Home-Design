@@ -49,7 +49,7 @@
            <p>pepole upload our designs, 
              you can show them and get some ideas to make own design</p>
            <ul class="actions">
-             <li><a href="#one" class="button next scrolly">Get Started</a></li>
+             {{-- <li><a href="#one" class="button next scrolly">Get Started</a></li> --}}
            </ul>
          </div>
        </div>
@@ -63,7 +63,7 @@
           @foreach ($design as $design)
            <article>
              <span class="image">
-               <img src="{{asset('images/designs/'.$design->image)}}" alt="" />
+               <img class="delete-icon" src="{{asset('images/designs/'.$design->image)}}" alt="" />
              </span>
              <header class="major">
                <h3><a href="{{route('comments',$design->id)}}" class="link">{{$design->name}}</a></h3>

@@ -8,6 +8,19 @@
   --lighter-blue: #2d5173;
 }
 
+/* .icon
+{
+	position: absolute !important;
+}
+
+.delete-icon
+{
+	position: relative !important;
+	margin-top: 50px !important;
+	margin-left: 100px;
+	width: 500px;
+} */
+
 .profile-head {
   transform: translateY(5rem)
 }

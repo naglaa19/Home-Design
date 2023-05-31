@@ -7,6 +7,7 @@ use App\Models\Comment;
 use App\Models\Design;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DesignController extends Controller
 {
@@ -24,5 +25,11 @@ class DesignController extends Controller
         $comments_count = Comment::select()->where('design_id',$id)->get()->count();
         // $commenter = Comment::select()->where('user_id',$user_id)->get();
         return view('user.comments',compact('design','comments_count','comment'));
+    }
+
+    public function destroy($id)
+    {
+        $design=Design::findOrFail($id)->delete();
+        return redirect()->route('profile/index',Auth::user()->id);
     }
 }

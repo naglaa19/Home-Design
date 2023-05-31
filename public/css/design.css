@@ -84,6 +84,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3183,6 +3184,7 @@ input, select, textarea {
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+			z-index: -55;
 		}
 
 			#banner.major.alt {

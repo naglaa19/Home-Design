@@ -21,15 +21,24 @@
 
 <!--navbar start-->
 
-
-<div class="back-nav">
+<section id="banner" class="major" >
+  <div class="inner" >
+    <header class="major">
+      <h1>Frequently Asked Question</h1>
+    </header>
+    <div class="content">
+      <p>Ask Us</p>
+    </div>
+  </div>
+</section>
+{{-- <div class="back-nav">
   <img style="" src="{{asset('img/7acf05bde65f33452c0306982de1251e.jpg')}}">
   <div class="back-text">
     <h1 style="color:#112233 ;
   text-align: center; padding-top:50px;">Frequently Asked Question</h1>
     <p>Ask Us</p>
   </div>
-</div>
+</div> --}}
 
 <div class="sections">
   {{-- <div class="list-group"  > --}}

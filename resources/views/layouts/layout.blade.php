@@ -59,6 +59,7 @@
                         <li><a href="{{route('/FAQ')}}">Ask me</a></li>
                         {{-- <li><a href="#contact">Contact Us</a></li> --}}
                         <li><a href="{{route('designs')}}">Designs</a></li>
+                        <li><a href="/">Appliaction</a></li>
                         @if (Auth::user())
                             <li><a href="{{route('profile/index',Auth::user()->id)}}">Profile</a></li>
                         @endif

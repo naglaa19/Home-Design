@@ -14,7 +14,8 @@
 }
 
 .first_section,
-.second_section{
+.second_section
+{
     position: absolute;
     width: 100%;
     /* z-index: -55; */
@@ -45,9 +46,13 @@
     font-size: 40px;
     font-weight: bold;
 }
+
+
+
 .second_section_header h1{
     margin-top: 800px;
-    margin-left: 550px;
+    text-align: center;
+    /* margin-left: 450px; */
     margin-bottom: 50px;
     
 }
@@ -81,7 +86,10 @@
 
 .third_section{
     position: absolute;
-    top: 1400px;
+    /* display: flex; */
+    margin-top: 1400px;
+    align-items: center;
+    justify-content: center;
     /* left: 100px; */
     width: 100%;
     background-color: var(--mint-green);
@@ -114,6 +122,7 @@
 
 .fourth_section{
     position: absolute;
+    display: flex;
     top: 1950px;
 }
 

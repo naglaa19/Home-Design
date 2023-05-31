@@ -26,12 +26,12 @@
                        <!-- end timeline-icon -->
                        <!-- begin timeline-body -->
                        <div class="timeline-body">
-                          <div class="timeline-header">
-                            {{-- @foreach ($design as $design)
-                             <span class="userimage"><img src="{{asset('images/profile/',$design->user->image)}}" alt=""></span>
-                             <span class="username"><a href="javascript:;">Sean Ngu</a> <small></small></span>
-                             @endforeach --}}
-                          </div>
+                          @if(Auth::user()->id == $design->user_id)
+                            <a href="{{route('design/delete',$design->id)}}" class="link" onclick="return confirm('Are you sure? \n If you confirm you will remove this design ...')">
+                              <img src="{{asset('images/icons/x.svg')}}" class="delete-icon"/>
+                            </a>
+                          @endif
+                          {{-- <a href="{{route('Category/delete',$design->id)}}" onclick="return confirm('Are you sure? \n If you confirm you will remove this design ...')" class="btn btn-danger">Delete</a> --}}
                           <div class="timeline-content">
                             <img class="photo1" src="{{asset('images/designs/'.$design->image)}}" alt="" />
                           </div>

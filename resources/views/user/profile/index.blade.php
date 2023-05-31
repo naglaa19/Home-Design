@@ -89,15 +89,16 @@
           <div class="py-4 px-4">
             <div class="d-flex align-items-center justify-content-between mb-3">
               <h5 class="mb-0 txt">Designs</h5>
-              {{-- <a href="#" class="btn btn-link text-muted">Show all</a> --}}
             </div>
             <div class="row">
                @foreach ($design as $design)
-              <div class="col-lg-6 mb-2 pr-lg-1">
-                <img
-                  src="{{asset('images/designs/'.$design->image)}}"
-                  alt=""
-                  class="img-fluid rounded shadow-sm"/>
+              <div class="col-lg-6 mb-2 pr-lg-1 cont">  
+                <div class="icon">           
+                <a href="{{route('comments',$design->id)}}" class="link">
+                  <img src="{{asset('images/designs/'.$design->image)}}" class="img-fluid rounded shadow-sm"/>
+                </a>
+                
+              </div> 
               </div>
               @endforeach
             </div>

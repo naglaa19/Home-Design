@@ -39,6 +39,16 @@ Route::group(['middleware' => 'auth:admin'],function(){
         Route::get('Show/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'show'])->name('Category/show');
     });
 
+    //scan 2d
+    Route::group(['prefix' => 'App'],function(){
+        Route::get('Index', [App\Http\Controllers\Admin\scanDesignController::class, 'index'])->name('app/index');
+        Route::post('Store', [App\Http\Controllers\Admin\scanDesignController::class, 'store'])->name('app/store');
+        Route::get('Create', [App\Http\Controllers\Admin\scanDesignController::class, 'create'])->name('app/create');
+        Route::get('Edit/{id}', [App\Http\Controllers\Admin\scanDesignController::class, 'edit'])->name('app/edit');
+        Route::post('Update/{id}', [App\Http\Controllers\Admin\scanDesignController::class, 'update'])->name('app/update');
+        Route::get('delete/{id}', [App\Http\Controllers\Admin\scanDesignController::class, 'destroy'])->name('app/delete');
+    });
+
     //Images
     Route::group(['prefix' => 'Image'],function(){
         Route::get('Index', [App\Http\Controllers\Admin\ImageController::class, 'index'])->name('Image/index');
@@ -140,6 +150,7 @@ Route::get('/images/{id}', [App\Http\Controllers\User\HomePageController::class,
 //Design
 Route::get('/designs', [App\Http\Controllers\User\DesignController::class, 'index'])->name('designs');
 Route::get('/comment/{id}', [App\Http\Controllers\User\DesignController::class, 'show'])->name('comments');
+Route::get('design/{id}', [App\Http\Controllers\User\DesignController::class, 'destroy'])->name('design/delete');
 
 //comments
 Route::post('/comments', [App\Http\Controllers\User\CommentController::class, 'store'])->name('comment/store');

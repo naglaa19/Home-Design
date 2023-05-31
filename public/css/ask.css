@@ -25,7 +25,7 @@ body{
 .containerFluid {
   width: 40%;
   margin: 0 auto;
-  margin-top: 550px;
+  margin-top: 170px;
   margin-bottom: 100px;
   
 }
@@ -171,3 +171,273 @@ a:hover
 
 
 
+.major h1{
+  margin-left: 120px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.content p
+{
+  margin-left: 120px;
+  color: var(--white);
+  /* font-size: 200px; */
+  font-size: 30px !important;
+}
+
+#banner.major {
+  height: 75vh;
+  min-height: 30em;
+  max-height: 50em;
+  z-index: -55;
+}
+
+  #banner.major.alt {
+    opacity: 0.75;
+  }
+
+  @media screen and (max-width: 736px) {
+
+		header.major > p br {
+			display: none;
+		}
+
+	}
+
+  header.major {
+		width: -moz-max-content;
+		width: -webkit-max-content;
+		width: -ms-max-content;
+		width: max-content;
+		margin-bottom: 2em;
+	}
+
+		header.major > :first-child {
+			margin-bottom: 0;
+			width: calc(100% + 0.5em);
+		}
+
+			header.major > :first-child:after {
+				content: '';
+				background-color: #ffffff;
+				display: block;
+				height: 2px;
+				margin: 0.325em 0 0.5em 0;
+				width: 100%;
+			}
+
+		header.major > p {
+			font-size: 0.7em;
+			font-weight: 600;
+			letter-spacing: 0.25em;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		body.is-ie header.major > :first-child:after {
+			max-width: 9em;
+		}
+
+		body.is-ie header.major > h1:after {
+			max-width: 100% !important;
+		}
+
+    @media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 6em 0 2em 0 ;
+			}
+
+				#banner > .inner .content p br {
+					display: none;
+				}
+
+				#banner.major {
+					padding: 8em 0 4em 0 ;
+				}
+
+		}
+
+    hr.major {
+			margin: 3em 0;
+		}
+
+    
+	#banner {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		background-image: url("../../images/banner.jpg");
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		padding: 6em 0 2em 0 ;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25em;
+		max-height: 32em;
+		min-height: 22em;
+		position: relative;
+		top: 0em;
+	}
+
+		#banner:after {
+			-moz-transition: opacity 2.5s ease;
+			-webkit-transition: opacity 2.5s ease;
+			-ms-transition: opacity 2.5s ease;
+			transition: opacity 2.5s ease;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			pointer-events: none;
+			background-color: var(--mint-green);
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.85;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		#banner h1 {
+			font-size: 3.25em;
+		}
+
+		#banner > .inner {
+			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+			padding: 0 !important;
+			position: relative;
+			z-index: 2;
+		}
+
+			#banner > .inner .image {
+				display: none;
+			}
+
+			#banner > .inner header {
+				width: auto;
+			}
+
+				#banner > .inner header > :first-child {
+					width: auto;
+				}
+
+					#banner > .inner header > :first-child:after {
+						max-width: 100%;
+					}
+
+			#banner > .inner .content {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				margin: 0 0 2em 0;
+			}
+
+				#banner > .inner .content > * {
+					margin-right: 1.5em;
+					margin-bottom: 0;
+				}
+
+				#banner > .inner .content > :last-child {
+					margin-right: 0;
+				}
+
+				#banner > .inner .content p {
+					font-size: 0.7em;
+					font-weight: 600;
+					letter-spacing: 0.25em;
+					text-transform: uppercase;
+				}
+        @media screen and (max-width: 736px) {
+
+          #banner {
+            padding: 5em 0 1em 0 ;
+            height: auto;
+            margin-bottom: -2.75em;
+            max-height: none;
+            min-height: 0;
+            top: -2.75em;
+          }
+    
+            #banner h1 {
+              font-size: 2em;
+            }
+    
+            #banner > .inner .content {
+              display: block;
+            }
+    
+              #banner > .inner .content > * {
+                margin-right: 0;
+                margin-bottom: 2em;
+              }
+    
+            #banner.major {
+              height: auto;
+              min-height: 0;
+              max-height: none;
+            }
+    
+        }
+
+        @media screen and (max-width: 480px) {
+
+          #banner {
+            padding: 6em 0 2em 0 ;
+          }
+    
+            #banner > .inner .content p br {
+              display: none;
+            }
+    
+            #banner.major {
+              padding: 8em 0 4em 0 ;
+            }
+    
+
+        }
+        .spotlights > section > .content {
+          display: -moz-flex;
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+          -moz-flex-direction: column;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -moz-justify-content: center;
+          -webkit-justify-content: center;
+          -ms-justify-content: center;
+          justify-content: center;
+          -moz-align-items: center;
+          -webkit-align-items: center;
+          -ms-align-items: center;
+          align-items: center;
+          padding: 2em 3em 0.1em 3em ;
+          width: 70%;
+        }
+  
+          .spotlights > section > .content > .inner {
+            margin: 0 auto;
+            max-width: 100%;
+            width: 65em;
+          }

@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img style="width: 85px" src="{{ asset('images/logo/home.png')}}">
+                    <img style="width: 85px" src="{{ asset('images/logo/MmLogo.png')}}">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -127,14 +127,16 @@
             <span class="nav-text">Designs</span>
             </a>
        </li>
+
+       
          
        {{-- Items  --}}
-       {{-- <li class="darkerli">
-            <a href="http://startific.com">
+       <li class="darkerli">
+            <a href="{{route('app/index')}}">
             <i class="fa fa-glass fa-lg"></i>
-            <span class="nav-text">Items</span>
+            <span class="nav-text">2D designs</span>
             </a>
-       </li> --}}
+       </li>
 
        {{-- QA Section  --}}
         <li class="darkerli">
